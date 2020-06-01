@@ -11,13 +11,13 @@ The email validation on the list of emails can be performed to check whether any
 
 The below query statement selects the email IDs with the below rules:
 
-A. The starting character must be an alphabet which is handled by the condition ```^[A-Za-z0-9.]```
+1. The starting character must be an alphabet which is handled by the condition ```^[A-Za-z0-9.]```
 
-B. The first part of the mail ID must contain only alphabets, numbers and periods which is handled by the condition ```[A-Za-z0-9.]```
+2. The first part of the mail ID must contain only alphabets, numbers and periods which is handled by the condition ```[A-Za-z0-9.]```
 
-C. The second part of the mail ID must be prefixed with an <b>at the rate of</b> (@) symbol and may contain only alphabets, numbers, hyphens and periods in them. This is handled by the condition ```@[A-Za-z0-9.-]```.
+3. The second part of the mail ID must be prefixed with an <b>at the rate of</b> (@) symbol and may contain only alphabets, numbers, hyphens and periods in them. This is handled by the condition ```@[A-Za-z0-9.-]```.
 
-D. The last and third part of the mail ID must be prefixed with a DOT followed by alphabets not less than two and no more than four. This is handled by the condition ```\.[A-Za-z]{2,4}$```. Here, ```\.``` searches for the literal character DOT
+4. The last and third part of the mail ID must be prefixed with a DOT followed by alphabets not less than two and no more than four. This is handled by the condition ```\.[A-Za-z]{2,4}$```. Here, ```\.``` searches for the literal character DOT
 
 
 Sample:
